@@ -1,0 +1,10 @@
+.cke_reset_all .cke_dialog input[type="text"] {
+	height: auto;
+}
+.cke_dialog a.cke_dialog_tab:hover, .cke_dialog a.cke_dialog_tab:focus, .cke_dialog a.cke_dialog_ui_button:hover, .cke_dialog a.cke_dialog_ui_button:focus {
+	text-decoration: none;
+}
+.cke_dialog.cke_ltr .cke_dialog_close_button {
+	right: 3px;
+	top: 6px;
+}

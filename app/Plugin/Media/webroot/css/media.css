@@ -1,0 +1,26 @@
+.media-grid .thumb {
+    background: #EEE;
+    width: 100px;
+    height: 100px;
+    margin: 0 6px 6px 0;
+    padding: 4px;
+    text-align: center;
+}
+.media-grid .thumb.main-thumb, .media-grid .thumb.main-thumb:hover {
+	border: 4px solid #51A351;
+	padding:0;
+}
+.media-grid .thumb.selected, .media-grid .thumb.selected:hover {
+    border: 4px solid #006dCC;
+    padding: 0;
+}
+.media-grid .thumb:hover {
+	border: 4px solid #ddd;
+	padding:0;
+}
+.media-grid .thumb.non-image img {margin-top: 5px;}
+.media-grid .media-thumbs { border-right: 1px solid #ddd; vertical-align: top; padding-right: 10px; }
+.media-grid .media-info { padding-left: 10px; vertical-align: top; }
+.media-grid .media-info input[type="text"] { width: 25px; }
+.media-grid .media-info input[readonly] { width: 96%; cursor: text; }
+.media-grid .media-info .media-urls input[readonly] {margin-bottom: 5px;}

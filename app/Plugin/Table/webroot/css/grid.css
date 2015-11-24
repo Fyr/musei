@@ -1,0 +1,197 @@
+.icon-in-bg {
+	background-position: right top;
+	background-repeat: no-repeat;
+	width: 16px;
+	height: 16px;
+}
+
+.grid {
+	background: #fff;
+	max-width: 100%;
+	vertical-align: middle;
+	font-size: 12px;
+	/*border: 1px solid #ebeff2;*/
+	margin: 0 auto 20px auto;
+}
+
+.grid td.format-text span {
+	display: block;
+	width: 250px;
+	white-space: nowrap;
+	overflow: hidden;
+	text-overflow: ellipsis;
+}
+
+.grid-sortable, .grid-sortable:visited {
+	color: #EAEAEA;
+	text-shadow:0 2px 0 rgba(0, 0, 0, 0.25);
+	text-decoration: none;
+	position: relative;
+	top: -1px;
+}
+.grid-unsortable, .grid-unsortable:visited, .grid-unsortable:hover {
+	color: #d0d0d0;
+	text-shadow:0 -1px 0 rgba(0, 0, 0, 0.25);
+	text-decoration: none;
+	cursor: default;
+}
+.grid-sortable-active, .grid-sortable-active:visited, .grid-sortable:hover {
+	color: #fff;
+	text-shadow: none;
+	text-decoration: none;
+	top: 0;
+}
+.grid-sortable-desc {
+	padding-right: 16px;
+	background: url("/Icons/img/desc.gif") no-repeat right bottom;
+}
+.grid-sortable-asc {
+	padding-right: 16px;
+	background: url("/Icons/img/asc.gif") no-repeat right top;
+}
+
+.grid thead .first th {
+	padding: 4px;
+}
+
+.grid input, .grid select {
+	width: auto;
+	padding: 1px 0px;
+	height: auto;
+	border-radius: 0;
+	font-size: 11px;
+	margin: 2px;
+}
+
+.grid input.big-input {
+	width: 95%;
+}
+
+.grid .nowrap {
+	white-space: nowrap;
+}
+
+.grid > thead > tr > th {
+	padding: 3px 5px;
+	text-align: center;
+	vertical-align: middle;
+}
+.grid > thead > tr.grid-filter > th:first-child {
+	border: 0px solid #fff;
+}
+.grid > tbody > tr.grid-row > td {
+	border-left: 1px solid #ebeff2;
+	padding: 3px 5px;
+	vertical-align: middle;
+}
+
+.grid .grid-row:nth-child(odd) td {
+	background: #ebeff2;
+	border-left: 1px solid #fff;
+}
+
+.table-gradient {
+	background-color: #496074;
+	background-image: -ms-linear-gradient(top, #B9C2C7 0%, #496074 100%);
+	background-image: -moz-linear-gradient(top, #B9C2C7 0%, #496074 100%);
+	background-image: -o-linear-gradient(top, #B9C2C7 0%, #496074 100%);
+	background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0, #B9C2C7), color-stop(1, #496074));
+	background-image: -webkit-linear-gradient(top, #B9C2C7 0%, #496074 100%);
+	background-image: linear-gradient(to bottom, #B9C2C7 0%, #496074 100%);
+	filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ffB9C2C7', endColorstr='#ff496074', GradientType=0);
+
+}
+.table-gradient th{
+	filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ffB9C2C7', endColorstr='#ff496074', GradientType=0);
+}
+.grid-footer table {
+	border-collapse: collapse;
+	height: 26px;
+}
+.grid-footer td {
+	color: #ffffff;
+	background: transparent;
+}
+.grid-footer input {
+	font-size: 11px;
+	vertical-align: baseline;
+	position: relative;
+	top: 1px;
+	padding: 0 2px;
+	height: 17px;
+}
+.grid thead .first {
+	/*background-image: linear-gradient(to bottom, #b9c2c7, #496074) !important;     */
+}
+.grid .grid-row:hover td {
+	background-color: #d7dbde;
+}
+.grid > tbody > tr.grid-row-selected > td {
+	background-color: #a2bdff !important;
+}
+
+td.align-center {
+	text-align: center;
+}
+
+td.align-right {
+	text-align: right;
+}
+
+.grid .grid-filter-date {
+	width: 80px;
+}
+
+.grid .grid-filter-int {
+	width: 40px;
+}
+
+.grid-filter-date + img {
+	display: inline-block;
+	cursor: pointer;
+}
+
+.grid table {
+	width: 100%;
+	border: none !important;
+	border-collapse: collapse;
+}
+
+.grid table tr td {
+	background: transparent !important;
+	border: none !important;
+	font-size: 11px;
+	vertical-align: baseline;
+}
+.grid .grid-footer .grid-paging span, .grid .grid-footer .grid-checked-actions small, .grid .grid-footer .grid-records-count span {
+	position: relative;
+	top: 1px;
+	margin: 0 3px;
+}
+
+.grid > tbody > tr >td:first-child, .grid .first th:first-child {
+	border-left: none !important;
+}
+.grid-footer small{
+	vertical-align: top;
+}
+.grid > tbody > tr > td.grid-no-data {
+	padding: 20px;
+	text-align: center;
+}
+.grid-paging {
+	width: 40%;
+}
+.grid-checked-actions, .grid-records-count {
+	width: 30%;
+}
+
+.grid .grid-row.legend-red td {
+	background-color: #fdd !important;
+}
+.grid .grid-row.legend-red.grid-row-selected td, .grid .grid-row.legend-yellow.grid-row-selected td {
+	background-color: #a2bdff  !important;
+}
+.grid .grid-row.legend-yellow td {
+	background-color: #ffd !important;
+}

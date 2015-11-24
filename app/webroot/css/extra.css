@@ -1,0 +1,119 @@
+.navbar-inverse .navbar-inner {
+	background-image: linear-gradient(to bottom, #444, #222);
+}
+
+.navbar .nav > li > a, .navbar .nav > li > a:focus {
+	text-shadow: 1px 1px 0 rgba(0, 0, 0, 0.5);
+}
+
+.navbar-fixed-top {
+	box-shadow: 0 1px 10px rgba(0, 0, 0, 0.3);
+}
+
+.mainLayout {
+    margin-top: 120px;
+}
+
+.footer {
+	background: #0088cc;
+	height: auto;
+	padding: 10px 0;
+}
+
+.footer a, .footer a:visited {
+	color: #fff;
+	text-decoration: none;
+	font-family: Verdana, Arial, sans-serif;
+	font-size: 0.9em;
+	text-shadow: 1px 1px 0 rgba(0, 0, 0, 0.5);
+}
+
+.footer a:hover, .footer a.active {
+	text-decoration: underline;
+}
+
+h1 {
+	text-shadow: 0 2px 1px rgba(0, 0, 0, 0.25);
+}
+
+p {
+	text-align: justify;
+}
+
+.breadcrumb {
+    background-color: transparent;
+    margin: 0 0 10px 0;
+    padding: 0;
+}
+.breadcrumb i {
+}
+
+.alphabet a, .alphabet a:visited {
+	color: #0088cc;
+	text-shadow: 1px 1px 0 rgba(0, 0, 0, 0.5);
+}
+
+.alphabet a:hover, .alphabet a.active {
+	color: #fff;
+	text-decoration: underline;
+}
+
+.bs-docs-sidenav > li.head {
+	padding: 10px;
+}
+
+.leftSidebar .block .head, .leftSidebar .nav li.head {
+	text-shadow: 1px 1px 0 rgba(0, 0, 0, 0.5);
+	font-size: 1.2em;
+}
+
+.block {
+	border: 1px solid #e5e5e5;
+}
+.bs-docs-sidenav, .leftSidebar .block, .mainLayout > .span9 > .block {
+	box-shadow: 0 4px 4px rgba(0, 0, 0, 0.1);
+}
+
+.navbar form { margin: 5px 0 0 0; }
+
+hr { margin: 0 0 10px 0; }
+.thumb {margin: 0 10px 10px 0;}
+
+.block hr:last-child { display: none; }
+
+.table-bordered { border-left: 1px solid #dddddd; }
+.tableContent .table-bordered th, .table-bordered td {
+    border-left: 1px solid #dddddd;
+}
+.tableContent .table-gradient {
+    background-color: #3f6d70;
+    background-image: linear-gradient(to bottom, #5a8f92 0%, #326263 100%);
+}
+
+.block .grid-unsortable, .block .grid-unsortable:visited, .block .grid-unsortable:hover { color: #fff; }
+
+.brand-logo { width: 30px; }
+
+.block .table-bordered th, .block .table-bordered td {
+    border-left: 1px solid #dddddd;
+}
+.block .table-gradient {
+    background-color: ##0088cc;
+    background-image: linear-gradient(to bottom, #0088cc 0%, #0088cc 100%);
+}
+#sampleLogo { float: left; width: 60%; margin: 0 10px 10px 0; }
+#sampleLogo img { width: 100%; border: 1px solid #ddd; margin-bottom: 10px; }
+
+.page-stats span { margin-right: 5px;}
+
+.logo-list .item { float: left; margin: 20px; width: 200px; }
+.logo-list .title { text-align: center; height: 3em; }
+.logo-list a.image { 
+	width: 200px;
+	border: 1px solid #ddd;
+	display: table-cell;
+	height: 150px;
+	text-align: center;
+	vertical-align: middle; 
+}
+.logo-list .page-stats span { display: block; }

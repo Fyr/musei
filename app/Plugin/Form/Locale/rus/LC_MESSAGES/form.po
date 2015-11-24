@@ -1,0 +1,35 @@
+msgid "String"
+msgstr "Строка"
+
+msgid "Integer"
+msgstr "Целое число"
+
+msgid "Float"
+msgstr "Число c точкой"
+
+msgid "Date"
+msgstr "Дата"
+
+msgid "Datetime"
+msgstr "Дата+время"
+
+msgid "Textarea"
+msgstr "Текст"
+
+msgid "Checkbox"
+msgstr "Чекбокс"
+
+msgid "Select"
+msgstr "Список"
+
+msgid "Multi-select"
+msgstr "Множ.список"
+
+msgid "Upload file"
+msgstr "Загрузка файла"
+
+msgid "Editor"
+msgstr "Текст.редактор"
+
+msgid "Formula"
+msgstr "Формула"

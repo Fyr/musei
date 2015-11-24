@@ -1,0 +1,1 @@
+<p class="text-right"><a class="btn btn-mini" href="<?=$url?>"><?=(isset($title)) ? $title : __('more')?> »</a></p>

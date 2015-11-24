@@ -1,0 +1,53 @@
+msgid "Upload files..."
+msgstr "Загрузка файлов..."
+
+msgid "Set as main"
+msgstr "Назначить осн."
+
+msgid "Delete"
+msgstr "Удалить"
+
+msgid "Original file"
+msgstr "Оригинальный файл"
+
+msgid "Uploaded"
+msgstr "Загружено"
+
+msgid "File name"
+msgstr "Имя файла"
+
+msgid "File size"
+msgstr "Размер файла"
+
+msgid "Resolution"
+msgstr "Разрешение"
+
+msgid "Enlarge"
+msgstr "Увеличить"
+
+msgid "Links"
+msgstr "Ссылки"
+
+msgid "Original size"
+msgstr "Оригинальный размер"
+
+msgid "For editor"
+msgstr "Для редактора"
+
+msgid "Resize"
+msgstr "Изменить размеры"
+
+msgid "Width"
+msgstr "Ширина"
+
+msgid "Height"
+msgstr "Высота"
+
+msgid "Media URL"
+msgstr "Media URL"
+
+msgid "Download"
+msgstr "Скачать"
+
+msgid "For download"
+msgstr "Для скачивания"

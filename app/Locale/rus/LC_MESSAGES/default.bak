@@ -1,0 +1,515 @@
+msgid "Username"
+msgstr "Пользователь"
+
+msgid "Invalid username or password, try again"
+msgstr "Неправильное имя пользователя или пароль"
+
+msgid "Jan"
+msgstr "Янв"
+
+msgid "Feb"
+msgstr "Фев"
+
+msgid "Mar"
+msgstr "Мар"
+
+msgid "Apr"
+msgstr "Апр"
+
+msgid "May"
+msgstr "Май"
+
+msgid "Jun"
+msgstr "Июн"
+
+msgid "Jul"
+msgstr "Июл"
+
+msgid "Aug"
+msgstr "Авг"
+
+msgid "Sep"
+msgstr "Сен"
+
+msgid "Oct"
+msgstr "Окт"
+
+msgid "Nov"
+msgstr "Ноя"
+
+msgid "Dec"
+msgstr "Дек"
+
+msgid "Today"
+msgstr "Сегодня"
+
+msgid "Yesterday"
+msgstr "Вчера"
+
+msgid "Text"
+msgstr "Текст"
+
+msgid "Static Pages"
+msgstr "Стат.страницы"
+
+msgid "News"
+msgstr "Новости"
+
+msgid "Categories"
+msgstr "Категории"
+
+msgid "Tech.params"
+msgstr "Тех.параметры"
+
+msgid "Create tech.param"
+msgstr "Создать тех.параметр"
+
+msgid "Edit tech.param"
+msgstr "Редактировать тех.параметр"
+
+msgid "Tech-params"
+msgstr "Тех.параметры"
+
+msgid "Products by sections"
+msgstr "Каталог по разделам"
+
+msgid "Slider"
+msgstr "Слайдер"
+
+msgid "Settings"
+msgstr "Настройки"
+
+msgid "Home"
+msgstr "Главная"
+
+msgid "Products"
+msgstr "Логотипы"
+
+msgid "About us"
+msgstr "О проекте"
+
+msgid "Contacts"
+msgstr "Контакты"
+
+msgid "You must log in to access this page"
+msgstr "Вы должны авторизоваться"
+
+msgid "Your session has been expired. Please, relogin to perform this action"
+msgstr "Авторизация истекла. Пож-ста, авторизуйтесь снова"
+
+msgid "Save"
+msgstr "Сохранить"
+
+msgid "Back"
+msgstr "Назад"
+
+msgid "Apply"
+msgstr "Применить"
+
+msgid "Upload files..."
+msgstr "Загрузка файлов..."
+
+msgid "Set as main"
+msgstr "Назначить осн."
+
+msgid "Delete"
+msgstr "Удалить"
+
+msgid "Original image"
+msgstr "Оригинальное изображение"
+
+msgid "Uploaded"
+msgstr "Загружено"
+
+msgid "File name"
+msgstr "Имя файла"
+
+msgid "File size"
+msgstr "Размер файла"
+
+msgid "Resolution"
+msgstr "Разрешение"
+
+msgid "Enlarge"
+msgstr "Увеличить"
+
+msgid "Links"
+msgstr "Ссылки"
+
+msgid "Original size"
+msgstr "Оригинальный размер"
+
+msgid "For editor"
+msgstr "Для редактора"
+
+msgid "Resize"
+msgstr "Изменить размеры"
+
+msgid "Width"
+msgstr "Ширина"
+
+msgid "Height"
+msgstr "Высота"
+
+msgid "Media URL"
+msgstr "Media URL"
+
+msgid "Add record"
+msgstr "Добавить запись"
+
+msgid "Show filter settings"
+msgstr "Показать настройки фильтра"
+
+msgid "Edit record"
+msgstr "Редактировать запись"
+
+msgid "Delete record"
+msgstr "Удалить запись"
+
+msgid "Delete checked records"
+msgstr "Удалить помеченные записи"
+
+msgid "Dashboard"
+msgstr "Главная"
+
+msgid "User name"
+msgstr "Имя пользователя"
+
+msgid "Password"
+msgstr "Пароль"
+
+msgid "Remember me"
+msgstr "Запомнить"
+
+msgid "Login"
+msgstr "Вход"
+
+msgid "Utils"
+msgstr "Утилиты"
+
+msgid "Generate static labels"
+msgstr "Сгенерировать стат.метки"
+
+msgid "Clean image cache"
+msgstr "Очистить кэш изображений"
+
+msgid "Processing query..."
+msgstr "Обработка запроса..."
+
+msgid "Subcategory"
+msgstr "Подкатегория"
+
+msgid "Product categories"
+msgstr "Категории услуг"
+
+msgid "CMS Development"
+msgstr "Разработка CMS"
+
+msgid "Admin Home Page"
+msgstr "Главная страница Админа"
+
+msgid "Open Home page of Front-end in a new tab"
+msgstr "Открыть главную страницу сайта в новой вкладке"
+
+msgid "Go to Site"
+msgstr "Перейти к сайту"
+
+msgid "Log out"
+msgstr "Выход"
+
+msgid "Category"
+msgstr "Категория"
+
+msgid "Articles"
+msgstr "Статьи"
+
+msgid "Static pages"
+msgstr "Стат.страницы"
+
+msgid "Subcategories"
+msgstr "Подкатегории"
+
+msgid "Create Static page"
+msgstr "Создать Cтат.страницу"
+
+msgid "Create Category"
+msgstr "Создать Категорию"
+
+msgid "Create Subcategory"
+msgstr "Создать Подкатегорию"
+
+msgid "Create Product category"
+msgstr "Создать категорию продукта"
+
+msgid "Products"
+msgstr "Логотипы"
+
+msgid "Create Product"
+msgstr "Создать логотип"
+
+msgid "Edit Product"
+msgstr "Редактировать логотип"
+
+msgid "View Product"
+msgstr "Просмотр логотипа"
+
+msgid "Create Article"
+msgstr "Создать Статью"
+
+msgid "Edit Article"
+msgstr "Редактировать Статью"
+
+msgid "View Article"
+msgstr "Просмотр статьи"
+
+msgid "Edit Static page"
+msgstr "Редактировать Стат.страницу"
+
+msgid "Create News article"
+msgstr "Создать Новость"
+
+msgid "Edit News article"
+msgstr "Редактировать Новость"
+
+msgid "View News article"
+msgstr "Просмотр новости"
+
+msgid "Edit Category"
+msgstr "Редактировать Категорию"
+
+msgid "Edit Subcategory"
+msgstr "Редактировать Подкатегорию"
+
+msgid "Edit Product сategory"
+msgstr "Редактировать категорию продукта"
+
+msgid "Spam protection"
+msgstr "Защита от спама"
+
+msgid "Send"
+msgstr "Отправить"
+
+msgid "General"
+msgstr "Общее"
+
+msgid "Title"
+msgstr "Название"
+
+msgid "Price"
+msgstr "Цена"
+
+msgid "Teaser"
+msgstr "Анонс"
+
+msgid "Published"
+msgstr "Опубликовано"
+
+msgid "Featured"
+msgstr "Особое"
+
+msgid "Create Parameter"
+msgstr "Создать параметр"
+
+msgid "Edit Parameter"
+msgstr "Редактировать параметр"
+
+msgid "Field Type"
+msgstr "Тип поля"
+
+msgid "Label"
+msgstr "Метка"
+
+msgid "Key"
+msgstr "Ключ"
+
+msgid "Formula"
+msgstr "Формула"
+
+msgid "Fieldset"
+msgstr "Группа полей"
+
+msgid "Required"
+msgstr "Обязательно"
+
+msgid "Password Confirm"
+msgstr "Подтверждение"
+
+msgid "Active"
+msgstr "Активен"
+
+msgid "Users"
+msgstr "Пользователи"
+
+msgid "Create User"
+msgstr "Создать Пользователя"
+
+msgid "Edit User"
+msgstr "Редактировать Пользователя"
+
+msgid "Field is mandatory"
+msgstr "Поле обязательно для заполнения"
+
+msgid "The name must be between 5 and 15 characters"
+msgstr "Имя должно быть от 5 до 15 символов"
+
+msgid "That name has already been taken"
+msgstr "Такое имя уже существует"
+
+msgid "The password must be between 5 and 15 characters"
+msgstr "Пароль должен быть от 5 до 15 символов"
+
+msgid "Your password and its confirmation do not match"
+msgstr "Пароль и подтверждение пароля не совпадают"
+
+msgid "Sort Order"
+msgstr "Сортировка"
+
+msgid "Upload"
+msgstr "Загрузить"
+
+msgid "Import CSV file"
+msgstr "Импорт CSV файла"
+
+msgid "Select file"
+msgstr "Выберите файл"
+
+msgid "Error file upload"
+msgstr "Ошибка загрузки файла"
+
+msgid "Incorrect file content"
+msgstr "Ошибка содержимого файла (Нет данных)"
+
+msgid "Incorrect file format (Line %s)"
+msgstr "Ошибка формата файла (строка %s)"
+
+msgid "File have been successfully uploaded"
+msgstr "Файл успешно загружен"
+
+msgid "Print selected records"
+msgstr "Распечатать выделенные строки"
+
+msgid "Brands"
+msgstr "Бренды"
+
+msgid "Create Brand"
+msgstr "Создать Бренд"
+
+msgid "Edit Brand"
+msgstr "Редактировать Бренд"
+
+msgid "Brand"
+msgstr "Бренд"
+
+msgid "Count"
+msgstr "Кол-во"
+
+msgid "Exported"
+msgstr "Экспорт данных"
+
+msgid "Data export"
+msgstr "Экспорт данных"
+
+msgid "Slug"
+msgstr "Адрес страницы"
+
+msgid "Sorting"
+msgstr "Сортировка"
+
+msgid "Title rus"
+msgstr "Название (RUS)"
+
+msgid "Motor"
+msgstr "Мотор"
+
+msgid "Detail num"
+msgstr "Номер детали"
+
+msgid "Code"
+msgstr "Код"
+
+msgid "On stock"
+msgstr "На складе"
+
+msgid "Uploadings"
+msgstr "Загрузка"
+
+msgid "Created"
+msgstr "Создано"
+
+msgid "Content"
+msgstr "Контент"
+
+msgid "Subcat"
+msgstr "Подкатегория"
+
+msgid "Options"
+msgstr "Опции"
+
+msgid "Decimals"
+msgstr "Кол-во цифр для дробн.части"
+
+msgid "Div Float"
+msgstr "Символ-разделитель для дробн.части"
+
+msgid "Div Int"
+msgstr "Символ-разделитель для цел.части"
+
+msgid "Catalog"
+msgstr "Каталог"
+
+msgid "System"
+msgstr "Система"
+
+msgid "Sections"
+msgstr "Разделы"
+
+msgid "Edit section"
+msgstr "Редактировать раздел"
+
+msgid "Create section"
+msgstr "Создать раздел"
+
+msgid "News categories"
+msgstr "Категории новостей"
+
+msgid "Article categories"
+msgstr "Категории статей"
+
+msgid "Article subcategories"
+msgstr "Подкатегории статей"
+
+msgid "Create News category"
+msgstr "Создать категорию для новости"
+
+msgid "Create Article category"
+msgstr "Создать категорию для статьи"
+
+msgid "Create Article subcategory"
+msgstr "Создать подкатегорию для статьи"
+
+msgid "Edit News category"
+msgstr "Редактировать категорию для новости"
+
+msgid "Edit Article category"
+msgstr "Редактировать категорию для статьи"
+
+msgid "Edit Article subcategory"
+msgstr "Редактировать подкатегорию для статьи"
+
+msgid "Featured product"
+msgstr "Спец.предложение"
+
+msgid "New logotypes"
+msgstr "Новые логотипы"
+
+msgid "View logotype %s in original size"
+msgstr "Просмотреть логотип %s в оригинальном размере"
+
+msgid "View logotype %s in original size"
+msgstr "Просмотреть логотип %s в оригинальном размере"
+
+msgid "Logo %s in vector"
+msgstr "Логотип %s в векторе"
+
+msgid "more"
+msgstr "подробнее"

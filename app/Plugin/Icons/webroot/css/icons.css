@@ -1,0 +1,57 @@
+.icon-color[class^="icon"] {
+	width: 16px;
+	height: 16px;
+	background-repeat: no-repeat;
+	background-position: top left;
+	vertical-align: middle;
+	margin-top: 0px;
+	margin-right: 2px;
+}
+.icon-color.icon-accept-filter {
+	background-image: url("/Icons/img/filter_accept.png") !important;
+}
+.icon-color.icon-clear-filter {
+	background-image: url("/Icons/img/filter_cancel.png") !important;
+}
+.icon-color.icon-edit {
+	background-image: url("/Icons/img/edit.gif") !important;
+}
+.icon-color.icon-delete {
+	background-image: url("/Icons/img/del.gif") !important;
+}
+.icon-color.icon-print {
+	background-image: url("/Icons/img/print.png") !important;
+}
+.icon-color.icon-add {
+	background-image: url("/Icons/img/add.gif") !important;
+}
+.icon-color.icon-filter-settings {
+	background-image: url("/Icons/img/filter_settings.png") !important;
+}
+.icon-color.icon-check {
+	background-image: url("/Icons/img/checked.png") !important;
+}
+.icon-color.icon-info {
+	background-image: url("/Icons/img/preview.gif") !important;
+}
+.icon-color.icon-first {
+	background-image: url("/Icons/img/first.gif") !important;
+}
+.icon-color.icon-next {
+	background-image: url("/Icons/img/next.gif") !important;
+}
+.icon-color.icon-last {
+	background-image: url("/Icons/img/last.gif") !important;
+}
+.icon-color.icon-prev {
+	background-image: url("/Icons/img/prev.gif") !important;
+}
+.icon-color.icon-save {
+	background-image: url("/Icons/img/save.gif") !important;
+}
+.icon-color.icon-preview {
+	background-image: url("/Icons/img/preview.gif") !important;
+}
+.icon-color.icon-open-folder{
+	background-image: url("/Icons/img/open_folder.gif") !important;
+}
