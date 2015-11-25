@@ -142,10 +142,11 @@ class Media extends AppModel {
      * @return array
      */
     public function getList($findData = array(), $order = array('Media.main' => 'DESC', 'Media.id' => 'DESC')) {
-        $aRows = $this->find('all', array('conditions' => $findData, 'order' => $order));
+        $aRows = $this->find('all', array('conditions' => $findData, 'order' => $order, 'callbacks' => false));
         foreach($aRows as &$_row) {
             $row = $_row[$this->alias];
             if ($row['media_type'] == 'image') {
+				$_row[$this->alias]['url_img'] = $this->PHMedia->getImageUrl($row['object_type'], $row['id'], 'noresize', $row['file'].$row['ext']);
             	$_row[$this->alias]['image'] = $this->PHMedia->getImageUrl($row['object_type'], $row['id'], 'thumb100x100', $row['file'].$row['ext']);
             } elseif ($row['ext'] == '.pdf') {
             	$_row[$this->alias]['image'] = '/media/img/pdf.png';

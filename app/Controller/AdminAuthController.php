@@ -5,6 +5,9 @@ class AdminAuthController extends AppController {
 	public $components = array('Core.PCAuth');
 	public $layout = 'login';
 
+	public function beforeRender() {
+	}
+
 	public function login() {
 		if ($this->request->is('post')) {
 			if ($this->Auth->login()) {

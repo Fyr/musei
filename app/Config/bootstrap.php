@@ -28,7 +28,7 @@ Configure::write('Recaptcha.publicKey', RECAPTCHA_PUBLIC_KEY);
 Configure::write('Recaptcha.privateKey', RECAPTCHA_PRIVATE_KEY);
 
 define('DOMAIN_NAME', 'logonarium.dev');
-define('DOMAIN_TITLE', 'Logonarium.dev');
+define('DOMAIN_TITLE', 'Инфокиоск');
 
 define('AUTH_ERROR', __('Invalid username or password, try again'));
 define('TEST_ENV', $_SERVER['SERVER_ADDR'] == '192.168.1.22');

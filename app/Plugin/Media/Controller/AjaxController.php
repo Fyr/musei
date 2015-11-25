@@ -3,11 +3,12 @@ App::uses('AppController', 'Controller');
 App::uses('PAjaxController', 'Core.Controller');
 class AjaxController extends PAjaxController {
 	public $name = 'Ajax';
-	// public $components = array('Core.PCAuth');
+
 	public $uses = array('Media.Media');
-	
-	protected $ProjectEvent;
-	
+
+	public function beforeFilter() {
+	}
+
 	public function upload() {
 		$this->autoRender = false;
 		App::uses('UploadHandler', 'Media.Vendor');

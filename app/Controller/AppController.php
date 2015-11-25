@@ -18,7 +18,7 @@ class AppController extends Controller {
 	}
 	
 	protected function _beforeInit() {
-	    $this->helpers = array_merge(array('Html', 'Form', 'Paginator', 'Media', 'ArticleVars'), $this->helpers);
+	    $this->helpers = array_merge(array('Html', 'Form', 'Paginator', 'Media', 'ArticleVars', 'ObjectType'), $this->helpers);
 	}
 
 	protected function _afterInit() {
@@ -45,10 +45,6 @@ class AppController extends Controller {
 			// 'Contacts' => array('label' => __('Contacts'), 'href' => array('controller' => 'SiteContacts', 'action' => 'index'))
 		);
 		$this->aBottomLinks = $this->aNavBar;
-		
-		$this->loadModel('Page');
-		$article = $this->Page->findBySlug('disclaimer');
-		$this->aBottomLinks['disclaimer'] = array('label' => $article['Page']['title'], 'href' => array('controller' => 'pages', 'action' => 'view', 'disclaimer'));
 		
 		$this->currMenu = $this->_getCurrMenu();
 	    $this->currLink = $this->currMenu;
@@ -83,6 +79,7 @@ class AppController extends Controller {
 	}
 	
 	protected function beforeRenderLayout() {
+		fdebug('App.beforeRenderLayout');
 		$this->loadModel('Media.Media');
 		$this->set('aSlider', $this->Media->getObjectList('Slider'));
 		

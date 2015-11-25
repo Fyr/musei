@@ -589,4 +589,63 @@ msgstr "Логотип в PNG"
 msgid "I agree with %s"
 msgstr "Я согласен с %s"
 
+msgid "Exhibits"
+msgstr "Экспозиции"
 
+msgid "Edit Exhibit"
+msgstr "Редактировать экспозицию"
+
+msgid "Create Exhibit"
+msgstr "Создать экспозицию"
+
+msgid "Exhibit Photos"
+msgstr "Фото для экспозиции"
+
+msgid "Edit Exhibit Photo"
+msgstr "Редактировать фото для экспозиции"
+
+msgid "Create Exhibit Photo"
+msgstr "Создать фото для экспозиции"
+
+
+msgid "Collections"
+msgstr "Коллекции"
+
+msgid "Edit Collection"
+msgstr "Редактировать коллекцию"
+
+msgid "Create Collection"
+msgstr "Создать коллекцию"
+
+msgid "Collection Photos"
+msgstr "Фото для коллекции"
+
+msgid "Edit Collection Photo"
+msgstr "Редактировать фото для коллекции"
+
+msgid "Create Collection Photo"
+msgstr "Создать фото для коллекции"
+
+msgid "Expositions"
+msgstr "Выставки"
+
+msgid "Edit Exposition"
+msgstr "Редактировать выставку"
+
+msgid "Create Exposition"
+msgstr "Создать выставку"
+
+msgid "Quiz"
+msgstr "Викторина"
+
+msgid "Edit Quiz"
+msgstr "Редактировать вопрос викторины"
+
+msgid "Create Quiz"
+msgstr "Создать вопрос викторины"
+
+msgid "Quiz text"
+msgstr "Текст вопроса"
+
+msgid "Answers"
+msgstr "Ответы"
