@@ -79,7 +79,6 @@ class AppController extends Controller {
 	}
 	
 	protected function beforeRenderLayout() {
-		fdebug('App.beforeRenderLayout');
 		$this->loadModel('Media.Media');
 		$this->set('aSlider', $this->Media->getObjectList('Slider'));
 		

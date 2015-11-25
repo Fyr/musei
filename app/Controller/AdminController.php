@@ -27,7 +27,6 @@ class AdminController extends AppController {
 	}
 	
 	public function beforeRenderLayout() {
-		fdebug('Admin.beforeRenderLayout');
 		$this->set('isAdmin', $this->isAdmin());
 	}
 	
