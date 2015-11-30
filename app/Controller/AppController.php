@@ -8,8 +8,8 @@ App::uses('CategoryProduct', 'Model');
 
 class AppController extends Controller {
 	public $paginate;
-	public $aNavBar = array(), $aBottomLinks = array(), $currMenu = '', $currLink = '';
-	public $pageTitle = '', $aBreadCrumbs = array(), $seo = array();
+	public $aNavBar = array(), $currMenu = '', $aBottomLinks, $currLink = '';
+	public $pageTitle = '';
 	
 	public function __construct($request = null, $response = null) {
 		$this->_beforeInit();
@@ -37,32 +37,23 @@ class AppController extends Controller {
 	
 	protected function beforeFilterLayout() {
 		$this->aNavBar = array(
-			'Home' => array('label' => __('Home'), 'href' => array('controller' => 'Pages', 'action' => 'home')),
-			'News' => array('label' => __('News'), 'href' => array('controller' => 'Articles', 'action' => 'index', 'objectType' => 'News')),
-			'Products' => array('label' => __('Products'), 'href' => array('controller' => 'SiteProducts', 'action' => 'index', 'objectType' => 'Product')),
-			'Articles' => array('label' => __('Articles'), 'href' => array('controller' => 'Articles', 'action' => 'index', 'objectType' => 'SiteArticle')),
-			'o-proekte' => array('label' => __('About us'), 'href' => array('controller' => 'Pages', 'action' => 'view', 'o-proekte')),
-			// 'Contacts' => array('label' => __('Contacts'), 'href' => array('controller' => 'SiteContacts', 'action' => 'index'))
+			'Page' => array('label' => 'О музее', 'href' => '', 'class' => 'aboutMuseum', 'submenu' => array()),
+			'Exhibit' => array('label' => __('Exhibits'), 'href' => '', 'class' => 'collections', 'submenu' => array()),
+			'Collection' => array('label' => __('Collections'), 'href' => '', 'class' => 'collections', 'submenu' => array()),
+			'Logo',
+			'Exposition' => array('label' => __('Expositions'), 'href' => array('controller' => 'Articles', 'action' => 'index', 'Exposition')),
+			'Quiz' => array('label' => __('Quiz'), 'href' => array('controller' => 'Articles', 'action' => 'index', 'Quiz')),
+			'Feedback' => array('label' => __('Feedback'), 'href' => '', 'class' => 'reviews', 'submenu' => array(
+				array('label' => 'Написать отзыв', 'href' => array('controller' => 'Articles', 'action' => 'index', 'Quiz')),
+				array('label' => 'Посмотреть отзывы', 'href' => array('controller' => 'Articles', 'action' => 'index', 'Quiz')),
+			))
 		);
-		$this->aBottomLinks = $this->aNavBar;
-		
+
 		$this->currMenu = $this->_getCurrMenu();
-	    $this->currLink = $this->currMenu;
 	}
 	
 	protected function _getCurrMenu() {
 		$curr_menu = strtolower(str_ireplace('Site', '', $this->request->controller)); // By default curr.menu is the same as controller name
-		/*
-		foreach($this->aNavBar as $currMenu => $item) {
-			if (isset($item['submenu'])) {
-				foreach($item['submenu'] as $_currMenu => $_item) {
-					if (strtolower($_currMenu) === $curr_menu) {
-						return $currMenu;
-					}
-				}
-			}
-		}
-		*/
 		return $curr_menu;
 	}
 	
@@ -72,25 +63,22 @@ class AppController extends Controller {
 		$this->set('aBottomLinks', $this->aBottomLinks);
 		$this->set('currLink', $this->currLink);
 		$this->set('pageTitle', $this->pageTitle);
-		$this->set('aBreadCrumbs', $this->aBreadCrumbs);
-		$this->set('seo', $this->seo);
-		
+
 		$this->beforeRenderLayout();
 	}
 	
 	protected function beforeRenderLayout() {
-		$this->loadModel('Media.Media');
-		$this->set('aSlider', $this->Media->getObjectList('Slider'));
-		
-		$this->loadModel('CategoryProduct');
-		$aCategories = $this->CategoryProduct->find('all'); //getObjectOptions();
-		$this->set('aCategories', $aCategories);
-		
-		$this->loadModel('News');
-		$conditions = array('News.published' => 1);
-		$order = 'News.created DESC';
-		$lastNews = $this->News->find('first', compact('conditions', 'order'));
-		$this->set('lastNews', $lastNews);
+		foreach(array('Page', 'Exhibit', 'Collection') as $objectType) {
+			$this->loadModel($objectType);
+			$aPages = $this->{$objectType}->find('all', array('order' => $objectType.'.sorting'));
+			foreach ($aPages as $article) {
+				$this->aNavBar[$objectType]['submenu'][] = array(
+					'label' => $article[$objectType]['title'],
+					'href' => array('controller' => 'Pages', 'action' => strtolower($objectType), $article[$objectType]['slug'])
+				);
+			}
+		}
+		$this->set('aNavBar', $this->aNavBar);
 	}
 	
 	/**

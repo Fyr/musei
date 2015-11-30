@@ -1,1 +1,1 @@
-<h1><?=$pageTitle?></h1>
+<div class="title"><?=$title?></div>

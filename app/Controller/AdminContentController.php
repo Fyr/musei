@@ -26,7 +26,8 @@ class AdminContentController extends AdminController {
     public function index($objectType, $objectID = '') {
         $this->paginate = array(
             'Page' => array(
-            	'fields' => array('title', 'slug')
+            	'fields' => array('title', 'slug', 'sorting'),
+				'order' => array('Page.sorting' => 'ASC')
             ),
         	'Exhibit' => array(
         		'fields' => array('created', 'title', 'slug', 'published', 'sorting'),

@@ -649,3 +649,6 @@ msgstr "Текст вопроса"
 
 msgid "Answers"
 msgstr "Ответы"
+
+msgid "Feedback"
+msgstr "Отзывы"
