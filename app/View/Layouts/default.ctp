@@ -17,7 +17,6 @@
 		'vendor/jquery/jquery.mCustomScrollbar.concat.min',
 		'vendor/jquery/jquery.the-modal',
 		'rego_custom',
-		'vendor/owl.carousel.min'
 	);
 	echo $this->Html->script($aScripts);
 

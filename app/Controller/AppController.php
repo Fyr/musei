@@ -41,11 +41,11 @@ class AppController extends Controller {
 			'Exhibit' => array('label' => __('Exhibits'), 'href' => '', 'class' => 'collections', 'submenu' => array()),
 			'Collection' => array('label' => __('Collections'), 'href' => '', 'class' => 'collections', 'submenu' => array()),
 			'Logo',
-			'Exposition' => array('label' => __('Expositions'), 'href' => array('controller' => 'Articles', 'action' => 'index', 'Exposition')),
+			'Exposition' => array('label' => __('Expositions'), 'href' => array('controller' => 'Pages', 'action' => 'exposition')),
 			'Quiz' => array('label' => __('Quiz'), 'href' => array('controller' => 'Articles', 'action' => 'index', 'Quiz')),
 			'Feedback' => array('label' => __('Feedback'), 'href' => '', 'class' => 'reviews', 'submenu' => array(
-				array('label' => 'Написать отзыв', 'href' => array('controller' => 'Articles', 'action' => 'index', 'Quiz')),
-				array('label' => 'Посмотреть отзывы', 'href' => array('controller' => 'Articles', 'action' => 'index', 'Quiz')),
+				array('label' => 'Написать отзыв', 'href' => array('controller' => 'Feedback', 'action' => 'submit')),
+				array('label' => 'Посмотреть отзывы', 'href' => array('controller' => 'Feedback', 'action' => 'index')),
 			))
 		);
 
@@ -78,6 +78,9 @@ class AppController extends Controller {
 				);
 			}
 		}
+		$this->loadModel('Exposition');
+		$article = $this->Exposition->find('first', array('order' => 'Exposition.sorting DESC'));
+		$this->aNavBar['Exposition']['href'][] = $article['Exposition']['slug'];
 		$this->set('aNavBar', $this->aNavBar);
 	}
 	

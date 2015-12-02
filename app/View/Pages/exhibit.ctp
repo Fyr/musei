@@ -1,6 +1,6 @@
 <?
 	$this->Html->css(array('owl.carousel', 'owl.theme', 'owl.transitions'), array('inline' => false));
-	$this->Html->script(array('owl.carousel.min', 'carusel'), array('inline' => false));
+	$this->Html->script(array('vendor/owl.carousel.min', 'carusel'), array('inline' => false));
 	$objectType = $this->ArticleVars->getObjectType($article);
 ?>
 
