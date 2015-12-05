@@ -2,8 +2,7 @@
 	echo $this->PHForm->input('options', array('onkeyup' => 'onChangeAnswers()', 'label' => array('class' => 'control-label', 'text' => 'Список ответов')));
 
     $options = $this->request->data('Article.options');
-    $options = str_replace(array("\r\n", "\n"), ',', $options);
-    $options = explode(',', $options);
+    $options = explode(',', str_replace(array("\r\n", "\n"), ',', trim($options)));
     echo $this->PHForm->input('correct', array('options' => $options,  'label' => array('class' => 'control-label', 'text' => 'Правильный ответ')));
 ?>
 <script type="text/javascript">

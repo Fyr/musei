@@ -42,7 +42,7 @@ class AppController extends Controller {
 			'Collection' => array('label' => __('Collections'), 'href' => '', 'class' => 'collections', 'submenu' => array()),
 			'Logo',
 			'Exposition' => array('label' => __('Expositions'), 'href' => array('controller' => 'Pages', 'action' => 'exposition')),
-			'Quiz' => array('label' => __('Quiz'), 'href' => array('controller' => 'Articles', 'action' => 'index', 'Quiz')),
+			'Quiz' => array('label' => __('Quiz'), 'href' => array('controller' => 'Quiz', 'action' => 'index')),
 			'Feedback' => array('label' => __('Feedback'), 'href' => '', 'class' => 'reviews', 'submenu' => array(
 				array('label' => 'Написать отзыв', 'href' => array('controller' => 'Feedback', 'action' => 'submit')),
 				array('label' => 'Посмотреть отзывы', 'href' => array('controller' => 'Feedback', 'action' => 'index')),

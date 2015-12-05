@@ -17,8 +17,8 @@ html {  position: relative;  height: 1078px; width: 1920px; }
 body {  font-family: Arial, sans-serif; font-size: 20px; height: 100%;  background-repeat: no-repeat; background-position: center center; background-size: cover; word-wrap: break-word; color: #503b16; overflow: hidden; }
 	body.main { background-image: url('../img/main.jpg'); }
 	body.about { background-image: url('../img/about.jpg'); }
-	body.quiz { background-image: url('../img/quiz.jpg'); }
-	body.quizFinish { background-image: url('../img/quiz_finish.jpg'); }
+	div.quiz { background-image: url('../img/quiz.jpg'); }
+	div.quizFinish { background-image: url('../img/quiz_finish.jpg'); }
 	body.review { background-image: url('../img/review.jpg'); }
 
 * { box-sizing: border-box; margin: 0; padding: 0; }

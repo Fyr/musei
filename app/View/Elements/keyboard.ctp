@@ -98,8 +98,8 @@ function getFocusedElement() {
 }
 
 $(function(){
-    $('.writeReview input:first').focus();
-    lastFocused = $('.writeReview input:first').get(0);
+    $('.writeReview input[type=text]:first').focus();
+    lastFocused = $('.writeReview input[type=text]:first').get(0);
 
     $('.writeReview input, .writeReview textarea').blur(function(){
         lastFocused = this;
