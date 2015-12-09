@@ -17,7 +17,15 @@ CakeLog::config('error', array(
 ));
 
 Configure::write('Config.language', 'rus');
-
+Configure::write('delay', array(
+	'page' => 1000,
+	'popup' => 500,
+	'quiz' => array(
+		'start' => 1000,
+		'next' => 1000,
+		'effects' => 1000
+	)
+));
 CakePlugin::loadAll();
 
 // Values from google recaptcha account

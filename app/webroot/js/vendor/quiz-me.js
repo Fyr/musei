@@ -20,6 +20,7 @@ var QuizMe = function(cfg) {
 		self.score = 0;
 		self.answers = {correct: 0, incorrect: 0, total: 0, step: new Array(self.totalSteps)};
 		self.totalScore = self.getTotalScore();
+		console.log('init', $self);
 		self.run();
 	}
 	

@@ -1,4 +1,4 @@
-<div class="wrapper2 records">
+
 	<div class="victorinaName"><div class="inner">Викторина “История края”</div></div>
 	<div class="nameRecord">Таблица рекордов</div>
 <?
@@ -13,4 +13,4 @@
 <?
 	}
 ?>
-</div>
+

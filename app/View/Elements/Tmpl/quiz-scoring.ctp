@@ -1,6 +1,6 @@
 <script id="tmpl-quiz-scoring" type="text/x-tmpl">
-<div class="wrapper2 win">
-	<div class="victorinaName"><div class="inner">Викторина “История края”</div></div>
+<div class="wrapper2 win"">
+	<?=$this->element('quiz-title')?>
 	<form>
 		<div class="clearfix">
 			<div class="number">Подсчет результатов...</div>

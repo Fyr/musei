@@ -15,6 +15,12 @@ class PagesController extends AppController {
 		$this->set('article', $article);
 		$this->currMenu = 'Page';
 	}
+
+	public function history() {
+		$article = $this->Page->findBySlug('history');
+		$this->set('article', $article);
+		$this->currMenu = 'Page';
+	}
 	
 	public function page($slug) {
 		$article = $this->Page->findBySlug($slug);

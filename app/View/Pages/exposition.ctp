@@ -1,9 +1,9 @@
-<body class="about">
+<div class="outerMain about">
 
 	<?=$this->element('popup')?>
 	<?=$this->element('menu')?>
 
-	<div class="wrapper1">
+	<div class="wrapper1" style="display: none">
 		<?=$this->element('title', $article['Exposition'])?>
 		<div class="article mCustomScroller">
 			<?=$this->ArticleVars->body($article)?>
@@ -25,4 +25,10 @@
 ?>
 	</div>
 
-</body>
+</div>
+
+<script type="text/javascript">
+$(function(){
+	$('.wrapper1').fadeIn(delay.page);
+});
+</script>

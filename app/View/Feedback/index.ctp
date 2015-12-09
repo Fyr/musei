@@ -2,12 +2,13 @@
 	$this->Html->css('bookblock', array('inline' => false));
 	$this->Html->script(array('vendor/jquery/jquery.dotdotdot', 'vendor/modernizr.custom', 'vendor/jquery/jquery.bookblock', 'page'), array('inline' => false));
 ?>
-<body class="review">
+
+<div class="outerMain review">
 
 <?=$this->element('popup')?>
 <?=$this->element('menu')?>
 
-<div class="wrapper3">
+<div class="wrapper3" style="display: none">
 	<div id="bb-bookblock" class="bb-bookblock">
 
 <?
@@ -44,10 +45,8 @@
 
 </div>
 
-<div class="backButton"><a href="javascript: void(0)"></a></div>
-
-<div class="modal fullReview" style="display: none">
-	<a href="#" class="close"></a>
-</div>
-
-</body>
+<script type="text/javascript">
+$(function(){
+	$('.wrapper3').fadeIn(delay.page);
+});
+</script>

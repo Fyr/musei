@@ -2,12 +2,12 @@
 	$this->Html->css('jquery.formstyler', array('inline' => false));
 	$this->Html->script('vendor/jquery/jquery.formstyler.min', array('inline' => false));
 ?>
-<body class="review">
+<div class="outerMain review">
 
 <?=$this->element('popup')?>
 <?=$this->element('menu')?>
 
-<div class="wrapper3">
+<div class="wrapper3" style="display: none">
 	<div class="bottomUzor">
 		<form action="" method="post">
 			<div class="clearfix">
@@ -46,5 +46,7 @@ function onSubmitForm() {
 }
 $(function(){
 	$('input').styler({});
+	$('.wrapper3').fadeIn(delay.page);
 });
 </script>
+</div>

@@ -14,12 +14,14 @@
 
 html {  position: relative;  height: 1078px; width: 1920px; }
 
-body {  font-family: Arial, sans-serif; font-size: 20px; height: 100%;  background-repeat: no-repeat; background-position: center center; background-size: cover; word-wrap: break-word; color: #503b16; overflow: hidden; }
-	body.main { background-image: url('../img/main.jpg'); }
-	body.about { background-image: url('../img/about.jpg'); }
-	div.quiz { background-image: url('../img/quiz.jpg'); }
-	div.quizFinish { background-image: url('../img/quiz_finish.jpg'); }
-	body.review { background-image: url('../img/review.jpg'); }
+body {  font-family: Arial, sans-serif; font-size: 20px; height: 100%;  word-wrap: break-word; color: #503b16; /*overflow: hidden;*/ }
+
+.outerMain { height: 100%;  background-repeat: no-repeat; background-position: center center; background-size: cover; }
+	.outerMain.main { background-image: url('../img/main.jpg'); }
+	.outerMain.about { background-image: url('../img/about.jpg'); }
+	.outerMain.quiz { background-image: url('../img/quiz.jpg'); }
+	.outerMain.quizFinish { background-image: url('../img/quiz_finish.jpg'); }
+	.outerMain.review { background-image: url('../img/review.jpg'); }
 
 * { box-sizing: border-box; margin: 0; padding: 0; }
 
@@ -37,17 +39,22 @@ ul { list-style: none; margin: 0; padding: 0;}
 	.wrapper1:after { content: ''; position: absolute; bottom: 0; left: 0; right: 0; background: url('../img/about_back_bottom.png') no-repeat center top; height: 20px; }
 
 	.wrapper1 .title { font-family: 'CyrillicOld';  text-align: center; font-size: 30px; padding-bottom: 28px; padding-right: 30px; color: #361b0c; }
-	.wrapper1 p { padding-bottom: 30px; }
+	.wrapper1 p { padding-bottom: 20px; }
 
 	.wrapper1 .subtitle { color: #503b16;  font-family: 'CyrillicOld';  text-align: center; font-size: 24px; padding-bottom: 40px; padding-left: 50px; }
 
 	.wrapper1 .mCustomScroller { height: 743px; }
 
-	.wrapper1 .border { border: 2px solid #8b7144; background: #f4ebc8; padding: 18px; display: inline-block; margin-bottom: 10px;  }
-		.wrapper1 .border img { display: block; border: 1px solid #8b7144; max-width: 100%; }
+	.wrapper1 .border { border: 2px solid #8b7144; background: #f4ebc8; padding: 18px; display: inline-block; margin-bottom: 10px; overflow: hidden; margin-top: 10px; }
+		.wrapper1 img { display: block; border: 1px solid #8b7144; max-width: 100%; }
 
 	.wrapper1 .leftFloat { float: left; margin-right: 32px;  }
 	.wrapper1 .rightFloat { float: right; margin-left: 32px;  }
+
+	.wrapper1 p { }
+
+	.wrapper1 .center { text-align: center; }
+
 
 .logoMain { position: absolute; top: 0; left: 50%; margin-left: -106px; z-index: 999; width: 213px; height: 218px; background: url('../img/logo_shadow.png') no-repeat left top; }
 	.logoMain img { display: block; width: 190px; height: 173px; margin: 0 auto; cursor: pointer; }
@@ -138,10 +145,12 @@ ul { list-style: none; margin: 0; padding: 0;}
 		.wrapper2 .currentResults .item .false { width: 33px; height: 33px; display: inline-block; background: url('../img/result_current.png') no-repeat 0 -66px; }
 
 
-	.wrapper2 .questionText { color: #453a27; margin: 20px 0 20px 0; height: 180px; overflow: hidden; }
+	.wrapper2 .questionText { color: #453a27; margin: 20px 0 20px 0; min-height: 150px; }
+	.wrapper2 .questionText p { padding-bottom: 0;}
 
 	.wrapper2 .answers { float: left; max-width: 50%; }
-		.wrapper2 .answers label { color: #62553e; padding: 0px 0 33px 0; display: inline-block; }
+		.wrapper2 .answers .ui-effects-wrapper { width: auto !important; height: auto !important; }
+		.wrapper2 .answers label { color: #62553e; margin: 0px 0 20px 0; display: block; width: auto !important; height: auto !important;  padding: 5px 7px; border-radius: 10px; }
 		.wrapper2 .answers .text { display: inline-block; vertical-align: middle; max-width: 90%; line-height: 20px; }
 		.wrapper2 .answers .btn { margin-top: 20px;}
 
@@ -185,6 +194,7 @@ ul { list-style: none; margin: 0; padding: 0;}
 	.btn:after { content: ''; width: 40px; height: 63px; background: url('../img/button.png') repeat-x left -73px; display: inline-block; position: absolute; right: -40px; top: 0; }
 	.btn:hover, .btn:active { color: #daae96; opacity: 0.85 }
 	.btn:focus { outline: none; border: 0;}
+	.btn[disabled] { opacity: 0.5; }
 
 .wrapper3 { width: 1304px; margin: 0 auto; background: url('../img/review_back.jpg') no-repeat center top; margin-top: -50px; height: 903px; padding: 135px 32px 24px 29px; line-height: 30px; position: relative; font-size: 22px;
 	box-shadow:         0px 0px 100px 40px rgba(0, 0, 0, 1);
@@ -193,7 +203,7 @@ ul { list-style: none; margin: 0; padding: 0;}
 	.wrapper3 .inputDates { float: right;}
 	.wrapper3 .writeReview { float: left; width: 460px; }
 	.wrapper3 .writeReview input[type='text'], .wrapper3 .writeReview textarea { width: 100%; }
-	.wrapper3 .writeReview textarea { margin-top: 33px; height: 320px; }
+	.wrapper3 .writeReview textarea { margin-top: 33px; height: 320px; overflow: auto;  }
 	.wrapper3 .writeReview .bottomButtons { padding-top: 30px;}
 	.wrapper3 .writeReview .bottomButtons .left { float: left; }
 	.wrapper3 .writeReview .bottomButtons .right { float: right; }

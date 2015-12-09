@@ -1,6 +1,6 @@
 <script id="tmpl-quiz-item" type="text/x-tmpl">
 		<div class="wrapper2">
-			<div class="victorinaName"><div class="inner">Викторина “История края”</div></div>
+			<?=$this->element('quiz-title')?>
 			<form>
 				<div class="clearfix">
 					<div class="number">{%=o.quiz.q%}</div>
@@ -25,14 +25,18 @@
 	for(var i = 0; i < o.quiz.options.length; i++) {
 		var item = o.quiz.options[i];
 %}
-						<label>
-							<input id="a{%=i%}" type="radio" name="qwerty" />
+					
+						<label id="a{%=i%}">
+							<input id="{%=i%}" type="radio" name="qwerty" onchange="console.log($('.answers button').get(0)); $('.answers button').get(0).disabled = false;" />
 							<span class="text">{%=item.text%} </span>
-						</label><br />
+						</label>
+					
 {%
 	}
 %}
-						<button type="button" class="btn" onclick="quiz.checkAnswer($('input:checked').prop('id').replace(/a/, ''));">Ответить</button>
+						<div>
+							<button type="button" class="btn" disabled="disabled" onclick="quiz.checkAnswer($('input:checked').prop('id'));">Ответить</button>
+						</div>
 					</div>
 {%
 	if (o.quiz.q_img) {
