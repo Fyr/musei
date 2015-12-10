@@ -16,7 +16,8 @@ class AdminController extends AppController {
 			'Exhibit' => array('label' => __('Exhibits'), 'href' => array('controller' => 'AdminContent', 'action' => 'index', 'Exhibit')),
 			'Collection' => array('label' => __('Collections'), 'href' => array('controller' => 'AdminContent', 'action' => 'index', 'Collection')),
 			'Exposition' => array('label' => __('Expositions'), 'href' => array('controller' => 'AdminContent', 'action' => 'index', 'Exposition')),
-			'Quiz' => array('label' => __('Quiz'), 'href' => array('controller' => 'AdminContent', 'action' => 'index', 'Quiz'))
+			'Quiz' => array('label' => __('Quiz'), 'href' => array('controller' => 'AdminContent', 'action' => 'index', 'Quiz')),
+			'Feedback' => array('label' => __('Feedbacks'), 'href' => array('controller' => 'AdminFeedback', 'action' => 'index'))
 		);
 		$this->aBottomLinks = $this->aNavBar;
 	}

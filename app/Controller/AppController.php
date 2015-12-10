@@ -43,7 +43,7 @@ class AppController extends Controller {
 			'Logo',
 			'Exposition' => array('label' => __('Expositions'), 'href' => array('controller' => 'Pages', 'action' => 'exposition')),
 			'Quiz' => array('label' => __('Quiz'), 'href' => array('controller' => 'Quiz', 'action' => 'index')),
-			'Feedback' => array('label' => __('Feedback'), 'href' => '', 'class' => 'reviews', 'submenu' => array(
+			'Feedback' => array('label' => __('Feedbacks'), 'href' => '', 'class' => 'reviews', 'submenu' => array(
 				array('label' => 'Написать отзыв', 'href' => array('controller' => 'Feedback', 'action' => 'submit')),
 				array('label' => 'Посмотреть отзывы', 'href' => array('controller' => 'Feedback', 'action' => 'index')),
 			))

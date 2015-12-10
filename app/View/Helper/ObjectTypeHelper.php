@@ -15,6 +15,7 @@ class ObjectTypeHelper extends AppHelper {
                 'User' => __('Users'),
                 'Exposition' => __('Expositions'),
                 'Quiz' => __('Quiz'),
+                'Feedback' => __('Feedbacks'),
             ), 
             'create' => array(
                 'Article' => __('Create Article'),
@@ -26,6 +27,7 @@ class ObjectTypeHelper extends AppHelper {
                 'User' => __('Create User'),
                 'Exposition' => __('Create Exposition'),
                 'Quiz' => __('Create Quiz'),
+                'Feedback' => __('Create Feedback'),
             ),
             'edit' => array(
                 'Article' => __('Edit Article'),
@@ -36,7 +38,8 @@ class ObjectTypeHelper extends AppHelper {
                 'CollectionPhoto' => __('Edit Collection Photo'),
                 'User' => __('Edit User'),
                 'Exposition' => __('Edit Exposition'),
-                'Quiz' => __('Edit Quiz')
+                'Quiz' => __('Edit Quiz'),
+                'Feedback' => __('Edit Feedback'),
             ),
             'view' => array(
             	'Article' => __('View Article'),

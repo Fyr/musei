@@ -650,5 +650,12 @@ msgstr "Текст вопроса"
 msgid "Answers"
 msgstr "Ответы"
 
-msgid "Feedback"
+msgid "Feedbacks"
 msgstr "Отзывы"
+
+msgid "Create Feedback"
+msgstr "Создать отзыв"
+
+msgid "Edit Feedback"
+msgstr "Редактировать отзыв"
+
